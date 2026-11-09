@@ -1,0 +1,10 @@
+{
+  "name": "Remix MindPulse – Real-Time Stress \u0026 Breathing Companion",
+  "description": "Contactless real-time pulse, breathing, and stress biofeedback with camera-based SmartSpectra SDK integration.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

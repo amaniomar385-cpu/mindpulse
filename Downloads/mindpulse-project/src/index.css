@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-slate-200);
+  }
+  .dark * {
+    border-color: var(--color-slate-800);
+  }
+}
+
+/* Custom pulse animations & subtle waveform glow */
+@keyframes ecg-scan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-ecg-scan {
+  animation: ecg-scan 2.5s linear infinite;
+}
